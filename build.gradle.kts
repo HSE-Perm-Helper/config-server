@@ -43,3 +43,11 @@ kotlin {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+tasks.jar {
+    archiveFileName.set("config-server.jar")
+}
+
+tasks.bootJar {
+    archiveFileName.set("config-server-standalone.jar")
+}

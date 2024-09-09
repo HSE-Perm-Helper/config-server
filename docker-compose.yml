@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  config-server:
+    image: melowetty/config-server
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    restart: always
+    networks:
+      - internal
+networks:
+  internal:
