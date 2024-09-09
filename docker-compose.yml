@@ -2,6 +2,8 @@ version: '3.8'
 services:
   config-server:
     image: melowetty/config-server
+    expose:
+      - "8888"
     environment:
       - SPRING_PROFILES_ACTIVE=prod
     restart: always
